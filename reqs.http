@@ -1,0 +1,22 @@
+@server = http://localhost:8080
+GET {{server}}/api/productos
+####
+POST {{server}}/api/productos
+Content-Type: application/json
+
+{"nombre": "Yogurt", "precio": 4.90}
+#####
+GET {{server}}/api/ventas
+####
+POST {{server}}/api/ventas
+Content-Type: application/json
+
+{"total": 58.30}
+#####
+GET {{server}}/api/ventadetalles
+####
+POST {{server}}/api/ventadetalles
+Content-Type: application/json
+
+{"cantidad": 7}
+###
